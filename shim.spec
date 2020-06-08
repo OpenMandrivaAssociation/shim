@@ -34,7 +34,7 @@ BuildRequires:	pesign
 # case we won't have a valid expansion here...  To be solved in the future
 # (shim 16+) by making the unsigned packages all provide "shim-unsigned", so
 # we can just BuildRequires that.
-%ifarch x86_64
+%ifarch %{x86_64}
 BuildRequires: %{unsignedx64} = %{shimverx64}
 BuildRequires: %{unsignedia32} = %{shimveria32}
 %endif
